@@ -29,7 +29,7 @@
         },
         "uri": {
           "title": "Linked budget information",
-          "description": "A URI pointing directly to a machine-readable record about the related budget or projects for this contracting process.",
+          "description": "A URI pointing directly to a machine-readable information about this budget entry.",
           "mergeStrategy": "ocdsVersion",
           "type": [
             "string",
