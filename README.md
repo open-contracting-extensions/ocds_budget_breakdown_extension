@@ -32,6 +32,8 @@ In the core ```planning.budget``` block:
 * ```budget.period``` should be used to capture the total period over which the budget applies.
 * ```budget.sourceEntity``` should be ommitted.
 
+Where ```budget.budgetBreakdown``` is used to express a multi-source budget but the organization details are not known for one or more parts of the budget, for example in a PPP where part of the budget will be provided by the successful private sector bidder, the ```sourceEntity.name``` field should be used to provide a free text explanation of the source of the budget, e.g. "Private sector investment from successful bidder".
+
 ## Examples
 
 ### Multi-source budgets
