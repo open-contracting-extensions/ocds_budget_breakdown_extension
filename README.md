@@ -144,6 +144,7 @@ The following JSON snippet models a multi-year single source budget:
 
 * Update ```budget.sourceEntity``` terminology once the nomenclature of the [parties extension](https://github.com/open-contracting/ocds_extension_parties) is finalised
 * Finalise guidance on use of extended fields in the core ```planning.budget``` field.
+* Finalise guidance where source entity is not known at time of budgeting
 
 
 
