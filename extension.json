@@ -1,5 +1,5 @@
 {"name":"Budget Breakdown",
-"desription":"Providing a breakdown of budgets by year and source",
+"description":"Providing a breakdown of budgets by year and source",
 "compatibility": ">=1.0.0",
 "dependencies": ["https://raw.githubusercontent.com/open-contracting/ocds_extension_parties/master/"]
 }
