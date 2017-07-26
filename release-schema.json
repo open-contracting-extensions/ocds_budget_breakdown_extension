@@ -45,7 +45,7 @@
         "sourceParty": {
           "$ref": "#/definitions/OrganizationReference",
           "title": "Source party",
-          "description": "The organisation or other party related to this budget entry. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
+          "description": "The organization or other party related to this budget entry. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
         }
       }
     },
