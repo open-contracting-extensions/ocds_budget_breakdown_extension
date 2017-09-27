@@ -1,6 +1,5 @@
 # Budget Breakdown
 
-
 ## Background
 
 The ```planning``` section of OCDS can be used to describe the background to a contracting process, which may include details of the budget from which funds are drawn.
@@ -58,7 +57,7 @@ The following JSON snippet models a single year multi-source budget:
         {
             "sourceEntity": {
                 "id": "GB-LAC-E09000003-557",
-                "name" : "London Borough of Barnet - Transport Services" 
+                "name" : "London Borough of Barnet - Transport Services"
             },
             "period": {
                 "startDate": "2016-01-01T00:00:00Z",
@@ -74,7 +73,7 @@ The following JSON snippet models a single year multi-source budget:
         {
             "sourceEntity": {
                 "id": "GB-GOV-23",
-                "name" : "Department for Transport" 
+                "name" : "Department for Transport"
             },
             "period": {
                 "startDate": "2016-01-01T00:00:00Z",
@@ -86,7 +85,7 @@ The following JSON snippet models a single year multi-source budget:
                 "amount": 150000,
                 "currency": "GBP"
             }
-        }  
+        }
     ]
 }
 ```
@@ -100,7 +99,7 @@ The following JSON snippet models a multi-year single source budget:
     "budget": {
         "sourceEntity": {
             "id": "GB-LAC-E09000003-557",
-            "name" : "London Borough of Barnet - Transport Services" 
+            "name" : "London Borough of Barnet - Transport Services"
         },
         "period": {
             "startDate": "2016-01-01T00:00:00Z",
@@ -135,7 +134,7 @@ The following JSON snippet models a multi-year single source budget:
                 "amount": 100000,
                 "currency": "GBP"
             }
-        }  
+        }
     ]
 }
 ```
@@ -145,8 +144,7 @@ The following JSON snippet models a multi-year single source budget:
 * Finalize guidance on use of extended fields in the core ```planning.budget``` field.
 * Finalize guidance where source entity is not known at time of budgeting
 
-
-See issue https://github.com/open-contracting/standard/issues/377
+See issue [#377](https://github.com/open-contracting/standard/issues/377).
 
 ## Issues
 
