@@ -145,3 +145,7 @@ The following JSON snippet models a multi-year single source budget:
 * Finalize guidance where source entity is not known at time of budgeting
 
 See issue [#377](https://github.com/open-contracting/standard/issues/377).
+
+## Issues
+
+Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
