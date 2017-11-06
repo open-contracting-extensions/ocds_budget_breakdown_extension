@@ -40,54 +40,50 @@ Where ```budget.budgetBreakdown``` is used to express a multi-source budget but 
 The following JSON snippet models a single year multi-source budget:
 
 ```JSON
-"planning":{
-    "budget": {
-        "period": {
-            "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T00:00:00Z"
-        },
-        "id": "string",
-        "description": "string",
-        "amount": {
+"planning": {
+        "budget": {
+          "id": "1",
+          "description": "Multi-source budget, see budget breakdown for details.",
+          "amount": {
             "amount": 300000,
             "currency": "GBP"
-        }
-    },
-    "budgetBreakdown": [
-        {
-            "sourceEntity": {
+          },
+          "budgetBreakdown": [
+            {
+              "sourceParty": {
                 "id": "GB-LAC-E09000003-557",
-                "name" : "London Borough of Barnet - Transport Services"
-            },
-            "period": {
+                "name": "London Borough of Barnet - Transport Services"
+              },
+              "period": {
                 "startDate": "2016-01-01T00:00:00Z",
                 "endDate": "2016-12-31T00:00:00Z"
-            },
-            "id": "001",
-            "description": "Budget contribution from the local government",
-            "amount": {
+              },
+              "id": "001",
+              "description": "Budget contribution from the local government",
+              "amount": {
                 "amount": 150000,
                 "currency": "GBP"
-            }
-        },
-        {
-            "sourceEntity": {
+              }
+            },
+            {
+              "sourceParty": {
                 "id": "GB-GOV-23",
-                "name" : "Department for Transport"
-            },
-            "period": {
+                "name": "Department for Transport"
+              },
+              "period": {
                 "startDate": "2016-01-01T00:00:00Z",
                 "endDate": "2016-12-31T00:00:00Z"
-            },
-            "id": "002",
-           "description": "Budget contribution from the national government",
-            "amount": {
+              },
+              "id": "002",
+              "description": "Budget contribution from the national government",
+              "amount": {
                 "amount": 150000,
                 "currency": "GBP"
+              }
             }
+          ]
         }
-    ]
-}
+      }
 ```
 
 ### Multi-year budgets
@@ -96,47 +92,41 @@ The following JSON snippet models a multi-year single source budget:
 
 ```JSON
 "planning": {
-    "budget": {
-        "sourceEntity": {
-            "id": "GB-LAC-E09000003-557",
-            "name" : "London Borough of Barnet - Transport Services"
-        },
-        "period": {
-            "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2017-12-31T00:00:00Z"
-        },
-        "amount": {
+        "budget": {
+          "id": "2",
+          "description": "Multi-year budget, see budget breakdown for details.",
+          "amount": {
             "amount": 300000,
             "currency": "GBP"
-        }
-    },
-    "budgetBreakdown": [
-        {
-            "period": {
+          },
+          "budgetBreakdown": [
+            {
+              "period": {
                 "startDate": "2016-01-01T00:00:00Z",
                 "endDate": "2016-12-31T00:00:00Z"
-            },
-            "id": "001",
-            "description": "2016 Budget",
-            "amount": {
+              },
+              "id": "001",
+              "description": "2016 Budget",
+              "amount": {
                 "amount": 200000,
                 "currency": "GBP"
-            }
-        },
-        {
-            "period": {
+              }
+            },
+            {
+              "period": {
                 "startDate": "2017-01-01T00:00:00Z",
                 "endDate": "2017-12-31T00:00:00Z"
-            },
-            "id": "002",
-            "description": "2017 Budget",
-            "amount": {
+              },
+              "id": "002",
+              "description": "2017 Budget",
+              "amount": {
                 "amount": 100000,
                 "currency": "GBP"
+              }
             }
+          ]
         }
-    ]
-}
+      }
 ```
 
 ## To do
