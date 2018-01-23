@@ -2,9 +2,9 @@
 
 ## Background
 
-The ```planning``` section of OCDS can be used to describe the background to a contracting process, which may include details of the budget from which funds are drawn.
+The `planning` section of OCDS can be used to describe the background to a contracting process, which may include details of the budget from which funds are drawn.
 
-OCDS core includes a single ```budget.amount``` field to capture the total value of the budget for the contracting process.
+OCDS core includes a single `budget.amount` field to capture the total value of the budget for the contracting process.
 
 ## Providing more detailed budget information
 
@@ -16,22 +16,22 @@ Disclosing structured data on multi-source budgets allows users to understand ho
 
 ## Extension fields
 
-This extension adds a ```budgetBreakdown``` property to the ```planning``` section of OCDS. ```budgetBreakdown``` is an array of ```budget``` blocks.
+This extension adds a `budgetBreakdown` property to the `planning` section of OCDS. `budgetBreakdown` is an array of `budget` blocks.
 
-This extension also extends the ```budget``` block with the following additional properties for use in the ```budgetBreakdown``` section:
+This extension also extends the `budget` block with the following additional properties for use in the `budgetBreakdown` section:
 
-* ```budget.sourceEntity``` - an organization reference, linking to the entry in the ```parties``` section describing the organization providing the funds for this part of the budget
-* ```budget.period``` - a period block, describing the period to which this part of the budget applies
+* `budget.sourceEntity` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget
+* `budget.period` - a period block, describing the period to which this part of the budget applies
 
 ## Guidance
 
-In the core ```planning.budget``` block:
+In the core `planning.budget` block:
 
-* ```budget.amount``` should be used to capture the total value of the budget for the contracting process.
-* ```budget.period``` should be used to capture the total period over which the budget applies.
-* ```budget.sourceEntity``` should be omitted.
+* `budget.amount` should be used to capture the total value of the budget for the contracting process.
+* `budget.period` should be used to capture the total period over which the budget applies.
+* `budget.sourceEntity` should be omitted.
 
-Where ```budget.budgetBreakdown``` is used to express a multi-source budget but the organization details are not known for one or more parts of the budget, for example in a PPP where part of the budget will be provided by the successful private sector bidder, the ```sourceEntity.name``` field should be used to provide a free text explanation of the source of the budget, e.g. "Private sector investment from successful bidder".
+Where `budget.budgetBreakdown` is used to express a multi-source budget but the organization details are not known for one or more parts of the budget, for example in a PPP where part of the budget will be provided by the successful private sector bidder, the `sourceEntity.name` field should be used to provide a free text explanation of the source of the budget, e.g. "Private sector investment from successful bidder".
 
 ## Examples
 
@@ -131,7 +131,7 @@ The following JSON snippet models a multi-year single source budget:
 
 ## To do
 
-* Finalize guidance on use of extended fields in the core ```planning.budget``` field.
+* Finalize guidance on use of extended fields in the core `planning.budget` field.
 * Finalize guidance where source entity is not known at time of budgeting
 
 See issue [#377](https://github.com/open-contracting/standard/issues/377).
