@@ -6,6 +6,7 @@
       "description": "This section allows a detailed budget breakdown to be expressed, covering multiple budget sources and multiple periods",
       "properties": {
         "id": {
+          "title": "Identifier",
           "description": "An identifier for this particular budget entry.",
           "mergeStrategy": "ocdsVersion",
           "type": [
@@ -24,6 +25,7 @@
           ]
         },
         "amount": {
+          "title": "Amount",
           "description": "The value of the budget line item.",
           "$ref": "#/definitions/Value"
         },
