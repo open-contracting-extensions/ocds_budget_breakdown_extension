@@ -4,6 +4,9 @@
       "type": "object",
       "title": "Detailed budget breakdown",
       "description": "This section allows a detailed budget breakdown to be expressed, covering multiple budget sources and multiple periods",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "title": "Identifier",
@@ -11,8 +14,7 @@
           "mergeStrategy": "ocdsVersion",
           "type": [
             "string",
-            "integer",
-            "null"
+            "integer"
           ]
         },
         "description": {
