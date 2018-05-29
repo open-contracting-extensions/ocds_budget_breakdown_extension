@@ -3,7 +3,7 @@
     "en": "Budget Breakdown"
   },
   "description": {
-    "en": "Providing a breakdown of budgets by year and source"
+    "en": "Adds an array of budgets to the planning section and extends the budget object to allow multi-source and multi-year budgets to be expressed."
   },
   "compatibility": [
     "1.0",
