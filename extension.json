@@ -3,7 +3,7 @@
     "en": "Budget Breakdown"
   },
   "description": {
-    "en": "Providing a breakdown of budgets by year and source"
+    "en": "Adds a budget breakdown array to the budget object to break down a budget by source and period."
   },
   "compatibility": [
     "1.0",
