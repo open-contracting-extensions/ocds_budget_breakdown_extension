@@ -5,11 +5,10 @@
   "description": {
     "en": "Adds a budget breakdown array to the budget object to break down a budget by source and period."
   },
-  "compatibility": [
-    "1.0",
-    "1.1"
-  ],
   "documentationUrl": {
     "en": "https://github.com/open-contracting/ocds_budget_breakdown_extension"
-  }
+  },
+  "compatibility": [
+    "1.1"
+  ]
 }
