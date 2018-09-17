@@ -57,7 +57,7 @@ The following JSON snippet models a single year multi-source budget:
           },
           "period": {
             "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T00:00:00Z"
+            "endDate": "2016-12-31T23:59:59Z"
           },
           "id": "001",
           "description": "Budget contribution from the local government",
@@ -73,7 +73,7 @@ The following JSON snippet models a single year multi-source budget:
           },
           "period": {
             "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T00:00:00Z"
+            "endDate": "2016-12-31T23:59:59Z"
           },
           "id": "002",
           "description": "Budget contribution from the national government",
