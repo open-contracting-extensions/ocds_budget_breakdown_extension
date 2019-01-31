@@ -11,7 +11,6 @@
         "id": {
           "title": "Identifier",
           "description": "An identifier for this particular budget entry.",
-          "mergeStrategy": "ocdsVersion",
           "type": [
             "string",
             "integer"
@@ -20,7 +19,6 @@
         "description": {
           "title": "Description",
           "description": "A short free text description of this budget entry.",
-          "mergeStrategy": "ocdsVersion",
           "type": [
             "string",
             "null"
@@ -34,7 +32,6 @@
         "uri": {
           "title": "Linked budget information",
           "description": "A URI pointing directly to a machine-readable information about this budget entry.",
-          "mergeStrategy": "ocdsVersion",
           "type": [
             "string",
             "null"
