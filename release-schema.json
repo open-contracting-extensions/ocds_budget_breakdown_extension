@@ -59,7 +59,8 @@
           "description": "A detailed breakdown of the budget by period and/or participating funders.",
           "items": {
             "$ref": "#/definitions/BudgetBreakdown"
-          }
+          },
+          "uniqueItems": true
         }
       }
     }
