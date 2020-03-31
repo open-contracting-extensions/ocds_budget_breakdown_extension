@@ -20,7 +20,7 @@ This extension adds a `budgetBreakdown` property to the `planning` section of OC
 
 This extension also extends the `budget` block with the following additional properties for use in the `budgetBreakdown` section:
 
-* `budget.sourceParty` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget
+* `budget.sourceParty` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. This party is ought to have the `funder` role
 * `budget.period` - a period block, describing the period to which this part of the budget applies
 
 ## Guidance
@@ -84,7 +84,19 @@ The following JSON snippet models a single year multi-source budget:
         }
       ]
     }
-  }
+  },
+  "parties": [
+    {
+      "id": "GB-GOV-23",
+      "name": "Department for Transport",
+      "roles": ["funder"]
+    },
+    {
+      "id": "GB-LAC-E09000003-557",
+      "name": "London Borough of Barnet - Transport Services",
+      "roles": ["funder"]
+    }
+  ]
 }
 ```
 
