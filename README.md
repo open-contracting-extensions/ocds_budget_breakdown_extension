@@ -20,7 +20,7 @@ This extension adds a `budgetBreakdown` property to the `planning` section of OC
 
 This extension also extends the `budget` block with the following additional properties for use in the `budgetBreakdown` section:
 
-* `budget.sourceParty` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. This party is ought to have the `funder` role
+* `budget.sourceParty` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. The party must have the 'funder' role
 * `budget.period` - a period block, describing the period to which this part of the budget applies
 
 ## Guidance
