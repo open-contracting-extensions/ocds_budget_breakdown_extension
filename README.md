@@ -14,22 +14,9 @@ This extension provides a way to describe multi-year and multi-source budgets.
 
 Disclosing structured data on multi-source budgets allows users to understand how much of the funds for a project come from government or from a specific department, whilst structured data on multi-year budgets allows users to understand the expected spend profile of a contract.
 
-## Extension fields
-
-This extension adds a `budgetBreakdown` property to the `planning` section of OCDS. `budgetBreakdown` is an array of `budget` blocks.
-
-This extension also extends the `budget` block with the following additional properties for use in the `budgetBreakdown` section:
-
-* `budget.sourceParty` - an organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. The party must have the 'funder' role
-* `budget.period` - a period block, describing the period to which this part of the budget applies
-
 ## Guidance
 
-In the core `planning.budget` block:
-
-* `budget.amount` should be used to capture the total value of the budget for the contracting process.
-* `budget.period` should be used to capture the total period over which the budget applies.
-* `budget.sourceParty` should be omitted.
+In the core `planning.budget` block, `budget.amount` should be used to capture the total value of the budget for the contracting process.
 
 Where `budget.budgetBreakdown` is used to express a multi-source budget but the organization details are not known for one or more parts of the budget, for example in a PPP where part of the budget will be provided by the successful private sector bidder, the `sourceParty.name` field should be used to provide a free text explanation of the source of the budget, e.g. "Private sector investment from successful bidder".
 
