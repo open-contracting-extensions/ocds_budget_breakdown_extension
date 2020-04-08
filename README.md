@@ -71,7 +71,23 @@ The following JSON snippet models a single year multi-source budget:
         }
       ]
     }
-  }
+  },
+  "parties": [
+    {
+      "id": "GB-GOV-23",
+      "name": "Department for Transport",
+      "roles": [
+        "funder"
+      ]
+    },
+    {
+      "id": "GB-LAC-E09000003-557",
+      "name": "London Borough of Barnet - Transport Services",
+      "roles": [
+        "funder"
+      ]
+    }
+  ]
 }
 ```
 
