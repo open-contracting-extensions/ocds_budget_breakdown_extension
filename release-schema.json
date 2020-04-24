@@ -23,7 +23,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "amount": {
           "title": "Amount",
@@ -49,7 +50,8 @@
           "title": "Source party",
           "description": "An organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. The party must have the 'funder' role. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
         }
-      }
+      },
+      "minProperties": 1
     },
     "Budget": {
       "properties": {
@@ -60,7 +62,8 @@
           "items": {
             "$ref": "#/definitions/BudgetBreakdown"
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       }
     }
