@@ -1,16 +1,8 @@
 # Budget Breakdown
 
-## Background
+OCDS' `planning.budget` object can be used to describe the budget from which funds are drawn. It includes a single `budget.amount` field to capture the total value of the budget for the contracting process.
 
-The `planning` section of OCDS can be used to describe the background to a contracting process, which may include details of the budget from which funds are drawn.
-
-OCDS core includes a single `budget.amount` field to capture the total value of the budget for the contracting process.
-
-## Providing more detailed budget information
-
-Some OCDS implementations require more detailed information on budgets to be disclosed, for example multi-year budgets or budgets sourced from multiple different government departments. In the case of PPPs, budgets may be sourced from the private sector or from multi-lateral development banks.
-
-This extension provides a way to describe multi-year and multi-source budgets.
+This extension provides a way to describe the budget in greater detail, including multi-year budgets or budgets sourced from multiple organizations. In the case of PPPs, budgets may be sourced from the private sector or from multi-lateral development banks.
 
 Disclosing structured data on multi-source budgets allows users to understand how much of the funds for a project come from government or from a specific department, whilst structured data on multi-year budgets allows users to understand the expected spend profile of a contract.
 
