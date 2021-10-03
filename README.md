@@ -101,7 +101,7 @@ The following JSON snippet models a multi-year single source budget:
             "amount": 50000,
             "currency": "GBP"
           }
-        },
+        }
       ]
     }
   }
