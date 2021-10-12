@@ -22,6 +22,10 @@ The following JSON snippet models a single year multi-source budget:
 {
   "planning": {
     "budget": {
+      "amount": {
+        "amount": 300000,
+        "currency": "GBP"
+      },
       "budgetBreakdown": [
         {
           "id": "1",
@@ -77,6 +81,10 @@ The following JSON snippet models a multi-year single source budget:
 {
   "planning": {
     "budget": {
+      "amount": {
+        "amount": 70000,
+        "currency": "GBP"
+      },
       "budgetBreakdown": [
         {
           "id": "1",
