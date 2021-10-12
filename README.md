@@ -22,40 +22,30 @@ The following JSON snippet models a single year multi-source budget:
 {
   "planning": {
     "budget": {
-      "id": "1",
-      "description": "Multi-source budget, see budget breakdown for details.",
       "amount": {
         "amount": 300000,
         "currency": "GBP"
       },
       "budgetBreakdown": [
         {
+          "id": "1",
+          "description": "Budget contribution from the local government",
           "sourceParty": {
             "id": "GB-LAC-E09000003-557",
             "name": "London Borough of Barnet - Transport Services"
           },
-          "period": {
-            "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T23:59:59Z"
-          },
-          "id": "001",
-          "description": "Budget contribution from the local government",
           "amount": {
             "amount": 150000,
             "currency": "GBP"
           }
         },
         {
+          "id": "2",
+          "description": "Budget contribution from the national government",
           "sourceParty": {
             "id": "GB-GOV-23",
             "name": "Department for Transport"
           },
-          "period": {
-            "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T23:59:59Z"
-          },
-          "id": "002",
-          "description": "Budget contribution from the national government",
           "amount": {
             "amount": 150000,
             "currency": "GBP"
@@ -91,34 +81,32 @@ The following JSON snippet models a multi-year single source budget:
 {
   "planning": {
     "budget": {
-      "id": "2",
-      "description": "Multi-year budget, see budget breakdown for details.",
       "amount": {
-        "amount": 300000,
+        "amount": 70000,
         "currency": "GBP"
       },
       "budgetBreakdown": [
         {
+          "id": "1",
+          "description": "2021/2022",
           "period": {
-            "startDate": "2016-01-01T00:00:00Z",
-            "endDate": "2016-12-31T00:00:00Z"
+            "startDate": "2021-04-01T00:00:00Z",
+            "endDate": "2022-03-31T23:59:59Z"
           },
-          "id": "001",
-          "description": "2016 Budget",
           "amount": {
-            "amount": 200000,
+            "amount": 20000,
             "currency": "GBP"
           }
         },
         {
+          "id": "2",
+          "description": "2022/2023",
           "period": {
-            "startDate": "2017-01-01T00:00:00Z",
-            "endDate": "2017-12-31T00:00:00Z"
+            "startDate": "2022-04-01T00:00:00Z",
+            "endDate": "2023-03-31T23:59:59Z"
           },
-          "id": "002",
-          "description": "2017 Budget",
           "amount": {
-            "amount": 100000,
+            "amount": 50000,
             "currency": "GBP"
           }
         }
