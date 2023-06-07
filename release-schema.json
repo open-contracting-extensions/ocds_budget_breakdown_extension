@@ -28,7 +28,7 @@
         },
         "amount": {
           "title": "Amount",
-          "description": "The value of the budget line item.",
+          "description": "The value of the budget line item. A positive amount means the source organization funds the contracting process. A negative amount means the contracting process pays the source organization.",
           "$ref": "#/definitions/Value"
         },
         "uri": {
@@ -47,8 +47,8 @@
         },
         "sourceParty": {
           "$ref": "#/definitions/OrganizationReference",
-          "title": "Source party",
-          "description": "An organization reference, linking to the entry in the `parties` section describing the organization providing the funds for this part of the budget. The party must have the 'funder' role. If the budget amount is positive, this indicates a flow of resources from the party to the contracting process. If the budget amount is negative, it indicates a payment from the contracting process to this party."
+          "title": "Source organization",
+          "description": "The organization providing the funds for this budget entry. The corresponding entry in the `parties` array must have 'sourceParty' in its `roles` array."
         }
       },
       "minProperties": 1

@@ -122,6 +122,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2023-06-07
+
+* Add 'sourceParty' code to the `+partyRole.csv` codelist, because the 'funder' code is deprecated in OCDS 1.2.
+
 ### 2020-04-24
 
 * Add `minProperties`, `minItems` and/or `minLength` properties.
