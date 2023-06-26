@@ -41,14 +41,14 @@
           "format": "uri"
         },
         "period": {
-          "$ref": "#/definitions/Period",
           "title": "Budget period",
-          "description": "The period covered by this budget entry."
+          "description": "The period covered by this budget entry.",
+          "$ref": "#/definitions/Period"
         },
         "sourceParty": {
-          "$ref": "#/definitions/OrganizationReference",
           "title": "Source organization",
-          "description": "The organization providing the funds for this budget entry. The corresponding entry in the `parties` array must have 'sourceParty' in its `roles` array."
+          "description": "The organization providing the funds for this budget entry. The corresponding entry in the `parties` array must have 'sourceParty' in its `roles` array.",
+          "$ref": "#/definitions/OrganizationReference"
         }
       },
       "minProperties": 1
