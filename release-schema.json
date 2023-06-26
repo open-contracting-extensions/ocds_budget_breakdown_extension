@@ -1,9 +1,9 @@
 {
   "definitions": {
     "BudgetBreakdown": {
-      "type": "object",
       "title": "Detailed budget breakdown",
       "description": "This section allows a detailed budget breakdown to be expressed, covering multiple budget sources and multiple periods",
+      "type": "object",
       "required": [
         "id"
       ],
@@ -56,9 +56,9 @@
     "Budget": {
       "properties": {
         "budgetBreakdown": {
-          "type": "array",
           "title": "Budget breakdown",
           "description": "A detailed breakdown of the budget by period and/or participating funders.",
+          "type": "array",
           "items": {
             "$ref": "#/definitions/BudgetBreakdown"
           },
