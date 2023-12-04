@@ -16,7 +16,7 @@ Where `budget.budgetBreakdown` is used to express a multi-source budget but the 
 
 ### Multi-source budgets
 
-The following JSON snippet models a single year multi-source budget:
+A single-year, multi-source budget:
 
 ```json
 {
@@ -75,7 +75,7 @@ The following JSON snippet models a single year multi-source budget:
 
 ### Multi-year budgets
 
-The following JSON snippet models a multi-year single source budget:
+A multi-year, single-source budget:
 
 ```json
 {
