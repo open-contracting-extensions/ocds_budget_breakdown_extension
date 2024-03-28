@@ -1,6 +1,6 @@
 # Budget Breakdown
 
-OCDS' `planning.budget` object can be used to describe the budget from which funds are drawn. It includes a single `budget.amount` field to capture the total value of the budget for the contracting process.
+OCDS' `planning.budget` object can be used to describe the budget from which funds are drawn. It includes a single `budget.amount` field to capture the total value of the budget for a future contracting process.
 
 This extension provides a way to describe the budget in greater detail, including multi-year budgets or budgets sourced from multiple organizations. In the case of PPPs, budgets may be sourced from the private sector or from multi-lateral development banks.
 
@@ -8,7 +8,7 @@ Disclosing structured data on multi-source budgets allows users to understand ho
 
 ## Guidance
 
-In the core `planning.budget` block, `budget.amount` should be used to capture the total value of the budget for the contracting process.
+In the core `planning.budget` block, `budget.amount` should be used to capture the total value of the budget for a future contracting process.
 
 Where `budget.budgetBreakdown` is used to express a multi-source budget but the organization details are not known for one or more parts of the budget, for example in a PPP where part of the budget will be provided by the successful private sector bidder, the `sourceParty.name` field should be used to provide a free text explanation of the source of the budget, e.g. "Private sector investment from successful bidder".
 

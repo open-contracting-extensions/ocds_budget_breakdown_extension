@@ -28,7 +28,7 @@
         },
         "amount": {
           "title": "Amount",
-          "description": "The value of the budget line item. A positive amount means the source organization funds the contracting process. A negative amount means the contracting process pays the source organization.",
+          "description": "The value of the budget line item. A positive amount means the source organization funds a future contracting process. A negative amount means a future contracting process pays the source organization.",
           "$ref": "#/definitions/Value"
         },
         "uri": {
